@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@media(max-width: 1450px) {
+    .header{width: 100%;}
+    .nav{width: 21%;}
+    .container {
+        width: 100%;
+    }
+    .menu_btn img {
+        margin-top: 7.8vh;
+    }
+    .menu{width: 300px;}
+    .menu_list li a {
+        font-size: 1.2vw;
+    }
+    .menu_list li::after {
+        width: 3vw;
+        height: 4vh;
+    }
+    
+    .menu_list li::before {
+        width: 2.8vw;
+    }
+}
+@media(max-width:1024px) {
+    .logo img {
+        margin-top: 38px;
+        float: left;
+        width: 170px;
+        transition: all 0.5s;
+    }
+    .nav{width: 20%;}
+    .menu{width: 220px;}
+    .menu_list li::after {
+        width: 3vw;
+        top: -20%;
+        height: 3vh;
+    }
+    
+    .menu_list li::before {
+        width: 2.7vw;
+        height: 2.8vh;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2vw;
+    }
+    /* text */
+    .text h1{font-size: 20px;}
+    .text .root p{font-size: 13px;}
+
+     /* 푸터 */
+    .footer .f_sns{
+        float: left;
+        margin-left: 24%;
+        
+    }
+    .footer .f_logo{
+        margin-right: 1rem;
+    }
+    .footer .f_made p{ padding: 0 18px;}
+    .footer i{font-size: 20px;}
+}
+@media(max-width:768px) {
+    *{cursor: normal !important;}
+    .cursor{display: none;}
+    #notice_wrap {
+        width: 60vw;
+    }
+    .logo img {
+        margin-top: 47px;
+        float: left;
+        width: 130px;
+        transition: all 0.5s;
+    }
+    .menu_bar {margin-top: 6.5vh;}
+    .menu{width: 160px;}
+    .menu_list li::after {
+        width: 4vw;
+        top: -20%;
+        left: 5%;
+        height: 3vh;
+    }
+    
+    .menu_list li::before {
+        width: 3vw;
+        height: 2vh;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2.5vw;
+    }
+
+    /* text */
+    .text h1{font-size: 16px;}
+    .text .root p{font-size:11px;}
+
+    /* 푸터 */
+    .footer .f_logo{
+        margin-right: 1rem;
+    }
+    .footer img{
+        height: 70px;
+        margin-top: 50px;
+    }
+    
+    .footer .f_menu a{
+        color: #545454;
+        display: inline-block;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+    .footer .f_made p{
+        display: inline;
+        padding: 0 10px;
+    }
+    .footer .f_made,
+    .footer .f_menu{
+        width: 70%;
+    }
+    .footer .f_sns{
+        float: left;
+        margin-left: 25%;
+    }
+    .footer i{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+}
+@media(max-width:614px){
+    .footer div{font-size: 0.6rem;}
+    .footer .f_menu a{padding: 0 10px;}
+    .footer .f_made p{padding: 0 4px;}
+    .footer .f_made p:first-child{margin-left: 0;}
+    .footer .f_made,
+    .footer .f_menu{
+        width: 52%;
+    }
+}
+@media(max-width:580px){
+    .footer .f_menu, .footer .f_made, .footer .f_copy{display: none;}
+    .footer .f_sns{
+        margin-top: 85px;
+        float: left;
+        margin-left: 15%;
+        width: 35%;
+    }
+    .footer i{
+        font-size: 20px;
+        margin-right: 15px;
+        color: rgb(252, 128, 89);
+    }
+}
+@media(max-width:480px) {
+    .logo img {
+        margin-top: 53px;
+        float: left;
+        width: 100px;
+        transition: all 0.5s;
+    }
+    .nav{width: 30%;}
+    .menu{width: 120px;}
+    .menu_btn img {
+        width: 2.8vw;
+    }
+    .menu_list li::after {
+        width: 5vw;
+        height: 2.5vh;
+    }
+    
+    .menu_list li::before {
+        width: 0;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 4vw;
+        font-size: 4vw;
+    }
+
+    /* text */
+    .text h1{font-size: 14px;}
+    .text .root p{font-size:10px;}
+
+    /* 푸터 */
+    .footer .f_logo{
+        margin-right: 0rem;
+    }
+    .footer img{
+        height: 60px;
+        margin-top: 50px;
+    }
+    
+    .footer .f_menu{
+        margin-top: 10px;
+        width: 80%;
+        display: none;
+    }
+    
+    .footer .f_made{
+        width: 50%;
+        display: none;
+    }
+    
+    .footer .f_copy{
+        margin-top: 20px;
+        padding-left: 30px;
+        display: none;
+    }
+    .footer .f_sns{
+        margin-top: 85px;
+        float: left;
+        margin-left: 15%;
+        width: 35%;
+    }
+    .footer i{
+        font-size: 20px;
+        margin-right: 15px;
+        color: rgb(252, 128, 89);
+    }
+    
+}
+        

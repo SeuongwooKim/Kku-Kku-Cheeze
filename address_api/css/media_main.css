@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+@media(max-width: 1450px) {
+    .header{width: 100%;}
+    .nav{width: 21%;}
+    .container {
+        width: 100%;
+    }
+
+    .bxslider>div>img {
+        height: 100%;
+    }
+    .menu_btn img {
+        margin-top: 7.8vh;
+    }
+    .menu{width: 300px;}
+    .menu_list li a {
+        font-size: 1.2vw;
+    }
+    .menu_list li::after {
+        width: 3vw;
+        height: 4vh;
+    }
+    
+    .menu_list li::before {
+        width: 2.8vw;
+    }
+    .concept > div{
+    }
+    .light a{
+        margin-right: 20px;
+        height: 160px;
+    }
+    .light img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #calendar {
+        height: 100%;
+    }
+    .fc .fc-toolbar-title {
+        margin-left: 20px;
+        font-size: 2vw;
+    }   
+    .fc .fc-button-primary:disabled{
+        width: 5vw;
+    }
+}
+
+@media(max-width:1024px) {
+    .logo img {
+        margin-top: 38px;
+        float: left;
+        width: 170px;
+        transition: all 0.5s;
+    }
+    .nav{width: 20%;}
+    .menu{width: 220px;}
+    .menu_list li::after {
+        width: 3vw;
+        top: -20%;
+        height: 3vh;
+    }
+    
+    .menu_list li::before {
+        width: 2.7vw;
+        height: 2.8vh;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2vw;
+    }
+    .bxslider span.banner1 img {
+        width: 3vw;
+        height: 3vh;
+        margin-top: 1.5vh;
+    }
+    
+
+    .bxslider span.banner1,
+    .bxslider span.banner4 {
+        position: absolute;
+        width: 20vw;
+        height: 6vh;
+        line-height: 6vh;
+        bottom: 2vh;
+        left: 3vw;
+        color: #fff;
+    }
+
+    .bxslider span.banner2 {
+        position: absolute;
+        bottom: 3vh;
+        right: 0vw;
+        width: 15vw;
+        color: #fff;
+    }
+    .bxslider span.banner4 {
+        width: 20vw;
+    }
+    
+    .bxslider span.banner4 img {
+        float: right;
+        transform: rotate(90deg);
+        width: 3.8vw;
+        margin-top: -1vh;
+        margin-right: 0.8vw;
+    }
+
+    .light a{
+        margin-right: 20px;
+        height: 130px;
+    }
+
+    .review h3 {font-size: 1.5vw;}
+    .review img {width: 23%;}
+
+    
+    .fc .fc-toolbar-title {
+        font-size: 3vw;
+    }
+    .fc-button-group > button{
+        width: 4vw;
+    }
+    .fc .fc-button .fc-icon {
+        font-size: 1.2vw;
+    }
+    .fc .fc-button-primary:disabled{
+        width: 7vw;
+    }
+     /* 푸터 */
+    .footer .f_sns{
+        float: left;
+        margin-left: 24%;
+        
+    }
+    .footer .f_logo{
+        margin-right: 1rem;
+    }
+}
+
+@media(max-width:768px) {
+    *{cursor: normal !important;}
+    .cursor{display: none;}
+    #notice_wrap {
+        width: 60vw;
+    }
+    .logo img {
+        margin-top: 47px;
+        float: left;
+        width: 130px;
+        transition: all 0.5s;
+    }
+    .menu_bar {margin-top: 6.5vh;}
+    .menu{width: 160px;}
+    .menu_list li::after {
+        width: 4vw;
+        top: -20%;
+        left: 5%;
+        height: 3vh;
+    }
+    
+    .menu_list li::before {
+        width: 3vw;
+        height: 2vh;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2.5vw;
+    }
+    .bxslider span.banner1,
+    .bxslider span.banner4 {
+        position: absolute;
+        width: 20vw;
+        height: 6vh;
+        line-height: 6vh;
+        bottom: 1vh;
+        left: 3vw;
+        color: #fff;
+    }
+    .bxslider span.banner3 {
+        position: absolute;
+        top: 3vh;
+        right: 2vw;
+        width: 30vw;
+        color: #fff;
+    }
+    
+    .bxslider span.banner3 img {
+        float: left;
+        width: 2.7vw;
+        margin-right: 2vw;
+        margin-top: -1vh;
+        transform: rotate(-30deg);
+    }
+     
+    .bxslider span.banner4 img {
+        float: right;
+        transform: rotate(90deg);
+        width: 3.8vw;
+        margin-top: -0.3vh;
+        margin-right: 0.8vw;
+    }
+    
+    .concept div {
+        margin-bottom: 5vh;
+    }
+    
+
+    .light a{
+        margin-right: 20px;
+        height: 80px;
+    }
+
+    .review img {
+        width: 23%;
+        margin-right: 0.6rem;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 3vw;
+    }
+    .fc-button-group > button{
+        width: 5vw;
+    }
+    .fc .fc-button .fc-icon {
+        font-size: 2vw;
+        line-height: 1.2vh;
+    }
+    .fc .fc-button-primary:disabled{
+        width: 10vw;
+    }
+    /* 푸터 */
+    .footer .f_logo{
+        margin-right: 1rem;
+    }
+    .footer img{
+        height: 70px;
+        margin-top: 50px;
+    }
+    
+    .footer .f_menu a{
+        color: #545454;
+        display: inline-block;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+    .footer .f_made p{
+        display: inline;
+        padding: 0 10px;
+    }
+    .footer .f_made,
+    .footer .f_menu{
+        width: 70%;
+    }
+    .footer .f_sns{
+        float: left;
+        margin-left: 13%;
+    }
+    .footer i{
+        font-size: 25px;
+        margin-right: 15px;
+    }
+  
+}
+
+@media(max-width:480px) {
+    .logo img {
+        margin-top: 53px;
+        float: left;
+        width: 100px;
+        transition: all 0.5s;
+    }
+    .nav{width: 30%;}
+    .menu{width: 120px;}
+    .menu_btn img {
+        width: 2.8vw;
+    }
+    .menu_list li::after {
+        width: 5vw;
+        height: 2.5vh;
+    }
+    
+    .menu_list li::before {
+        width: 0;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 4vw;
+        font-size: 4vw;
+    }
+    .bxslider span.banner1,
+    .bxslider span.banner4 {
+        width: 22vw;
+        bottom: 0.1vh;
+    }
+
+    .bxslider span.banner1 img {
+        width: 4vw;
+        height: 2vh;
+        margin-top: 2vh;
+        margin-right: 1.6vw;
+    }
+    
+    .bxslider span.banner2 {
+        position: absolute;
+        bottom: 1.5vh;
+        right: 0vw;
+        width: 15vw;
+        color: #fff;
+    }
+    .bxslider span.banner3 {
+        position: absolute;
+        top: 3vh;
+        right: 2vw;
+        width: 25vw;
+        color: #fff;
+    }
+    .bxslider span.banner3 img {
+        float: left;
+        width: 2.7vw;
+        margin-right: 2vw;
+        margin-top: -1vh;
+        transform: rotate(-30deg);
+    }
+    .bxslider span.banner4 {
+        width: 20vw;
+    }
+    
+    .bxslider span.banner4 img {
+        float: right;
+        transform: rotate(90deg);
+        width: 3.8vw;
+        margin-top: 1vh;
+        margin-right: 0.8vw;
+    }
+
+    .concept div {
+        margin-bottom: 3vh;
+    }
+
+    .light a{
+        margin-right: 20px;
+        height: 50px;
+    }
+    
+    .review img {
+        width: 23%;
+        margin-right: 0.1rem;
+    }
+
+    .fc-button-group > button{
+        width: 6vw;
+        height: 4vh;
+    }
+    .fc .fc-button .fc-icon {
+        font-size: 2vw;
+        line-height: 0.1vh;
+    }
+    .fc .fc-button-primary:disabled{
+        width: 18vw;
+    }
+    /* 푸터 */
+    .footer .f_logo{
+        margin-right: 0rem;
+    }
+    .footer img{
+        height: 60px;
+        margin-top: 50px;
+    }
+    
+    .footer .f_menu{
+        margin-top: 10px;
+        width: 80%;
+        display: none;
+    }
+    
+    .footer .f_made{
+        width: 50%;
+        display: none;
+    }
+    
+    
+    .footer .f_sns{
+        margin-top: 85px;
+        float: left;
+        margin-left: 15%;
+        
+    }
+    
+    .footer .f_copy{
+        margin-top: 20px;
+        padding-left: 30px;
+        display: none;
+    }
+    .footer i{
+        font-size: 20px;
+        margin-right: 15px;
+        color: rgb(252, 128, 89);
+    }
+    
+}
