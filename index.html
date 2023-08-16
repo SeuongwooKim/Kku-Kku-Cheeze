@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kku kku cheeze</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="shortcut icon" href="images/menu_hover1.png">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <main class="container">
+        <header>
+            <h1><img src="images/logo.png" alt="kukucheeze_logo"><br>스터디 2팀 꾸꾸치즈</h1>
+            <h2>반응형 웹메인 페이지 제작</h2>
+        </header>
+        <section>
+            <a href="./sign_up_jsj.html">
+                <div class="box"> <strong>조성진 (팀장)</strong> <br>회원가입</div>
+            </a>
+            <a href="./main_ksw.html">
+                <div class="box">  <strong>김성우 (부팀장)</strong><br>메인</div>
+            </a>
+            <a href="./landing_kcy.html">
+                <div class="zero box"><strong>김채연 (디자인총괄)</strong><br>랜딩</div>
+            </a>
+            <br>
+            <a href="./about_jui.html">
+                <div class="box"><strong>정주이</strong><br>소개</div>
+            </a>
+            <a href="./gallery_jui.html">
+                <div class="box"><strong>정주이</strong><br>갤러리</div>
+            </a>
+            <a href="./address_api.html">
+                <div class="box"><strong>김지은</strong><br>자주 묻는 질문</div>
+            </a>
+            <a href="./faq_accordion_jee.html">
+                <div class="box"><strong>김지은</strong><br>찾아오시는 길</div>
+            </a>
+            <a href="./login_lmk.html">
+                <div class="box"><strong>이민기</strong><br>로그인, 비밀번호 찾기</div>
+            </a>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        //cursor
+        window.addEventListener("mousemove", (e) => {
+            var x = e.clientX - 25 + "px";
+            var y = e.clientY - 25 + "px";
+            document.querySelector(".cursor").style.left = x;
+            document.querySelector(".cursor").style.top = y;
+        });
+    </script>
+</body>
+
+</html>

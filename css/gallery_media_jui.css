@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+@media (max-width : 1600px) {
+.container{width: 100%;}
+    /* main */
+    main section article {
+        width: 25%;
+    }
+}
+
+@media(max-width: 1450px) {
+
+    /* header */
+    .header {
+        width: 100%;
+    }
+
+    .nav {
+        width: 21%;
+    }
+
+    .menu_btn img {
+        margin-top: 7.8vh;
+    }
+
+}
+
+@media (max-width : 1200px) {
+
+    /* main */
+    main {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    /* header */
+    .logo img {
+        margin-top: 38px;
+        float: left;
+        width: 170px;
+        transition: all 0.5s;
+    }
+
+    .nav {
+        width: 20%;
+    }
+
+    .menu {
+        width: 220px;
+    }
+
+    .menu_list li::after {
+        width: 3vw;
+        top: -20%;
+        height: 3vh;
+    }
+
+    .menu_list li::before {
+        width: 2.7vw;
+        height: 2.8vh;
+    }
+
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2vw;
+    }
+
+    /* 푸터 */
+    .footer .f_sns {
+        float: left;
+        margin-left: 24%;
+    }
+
+    .footer .f_logo {
+        margin-right: 1rem;
+    }
+}
+
+
+@media (max-width : 900px) {
+
+    /* main */
+    main section article {
+        width: 33.33%;
+    }
+}
+
+
+@media(max-width:768px) {
+    .cursor{display: none;}
+
+
+    /* header */
+    .logo img {
+        margin-top: 47px;
+        float: left;
+        width: 130px;
+        transition: all 0.5s;
+    }
+
+    .nav {
+        width: 25%;
+    }
+
+    .menu_bar {
+        margin-top: 6.5vh;
+    }
+
+    .menu {
+        width: 160px;
+    }
+
+    .menu_list li::after {
+        width: 4vw;
+        top: -20%;
+        left: 5%;
+        height: 3vh;
+    }
+
+    .menu_list li::before {
+        width: 3vw;
+        height: 2vh;
+    }
+
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2.5vw;
+    }
+
+    /* gallery */
+    
+
+    /* 푸터 */
+    .footer .f_logo {
+        margin-right: 1rem;
+    }
+
+    .footer img {
+        height: 70px;
+        margin-top: 50px;
+    }
+
+    .footer .f_menu a {
+        color: #545454;
+        display: inline-block;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+
+    .footer .f_made p {
+        display: inline;
+        padding: 0 10px;
+    }
+
+    .footer .f_made,
+    .footer .f_menu {
+        width: 70%;
+    }
+
+    .footer .f_sns {
+        float: left;
+        margin-left: 13%;
+    }
+
+    .footer i{
+        font-size: 25px;
+        margin-right: 15px;
+    }
+}
+
+
+@media (max-width : 720px) {
+
+    /* header */
+    #header ul {
+        left: 70%;
+    }
+}
+
+
+@media (max-width : 680px) {
+
+    /* main */
+    main section article {
+        width: 50%;
+    }
+    main ul li {
+        width: 100px;
+        margin-right: 10px;
+    }
+    /* footer */
+    .footer .f_made,
+    .footer .f_menu {
+        width: 60%;
+    }
+    .footer i{
+        font-size: 20px !important;
+        margin-right: 10px !important;
+        float: right;
+    }
+    .footer .f_sns {
+        float: left;
+        margin-left: 13%;
+    }
+}
+
+@media(max-width : 580px) {
+    /* main */
+    main section article div{
+        padding: 8px;
+    }
+
+    main ul {
+        margin-right: 10px;
+    }
+
+    main ul li {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    #out,
+    #in,
+    #pro {
+        width: 30%;
+        display: inline-block !important;
+        float: left !important;
+    }
+}
+
+
+@media (max-width : 540px) {
+
+    /* #header ul{left: 60%;} */
+    main section article {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    
+    /* header */
+    .logo img {
+        margin-top: 53px;
+        float: left;
+        width: 100px;
+        transition: all 0.5s;
+    }
+
+    .nav {
+        width: 32%;
+    }
+
+    .menu {
+        width: 120px;
+    }
+
+    .menu_btn img {
+        width: 2.8vw;
+        margin-top: 7.2vh;
+    }
+
+    .menu_list li::after {
+        width: 5vw;
+        height: 2.5vh;
+    }
+
+    .menu_list li::before {
+        width: 0;
+    }
+
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 4vw;
+        font-size: 4vw;
+    }
+    
+      /* main */
+      main ul #out,
+      #in,
+      #pro {
+          width: 30%;
+          display: inline-block !important;
+          float: left !important;
+      }
+      main ul li{
+        width: 80px;
+        margin-right: 8px;
+        font-size: 0.8em;
+    }
+    main section article div{
+        padding: 0;
+    }
+    .mleft{margin-left: 6%;}
+
+    /* 푸터 */
+    .footer .f_logo {
+        margin-right: 0rem;
+    }
+
+    .footer img {
+        height: 60px;
+        margin-top: 50px;
+    }
+
+    .footer .f_menu {
+        margin-top: 10px;
+        width: 80%;
+        display: none;
+    }
+
+    .footer .f_made {
+        width: 50%;
+        display: none;
+    }
+
+
+    .footer .f_sns {
+        margin-top: 85px;
+        float: left;
+        margin-left: 15%;
+
+    }
+
+    .footer .f_copy {
+        margin-top: 20px;
+        padding-left: 30px;
+        display: none;
+    }
+
+    .footer i {
+        font-size: 20px;
+        margin-right: 15px;
+        color: rgb(252, 128, 89);
+    }
+
+  
+}

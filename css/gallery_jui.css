@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* font */
+/* 눈누폰트 : 어비 세현체 https://noonnu.cc/font_page/187 */
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 눈누폰트 : IM 혜민체 https://noonnu.cc/font_page/686 */
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'UhBeeSe_hyun';
+    cursor: none !important;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+    color: #000 !important;
+}
+.clearfix::after, .clearfix::before{
+    clear: both;
+    display: block;
+    content: "";
+}
+body{
+    background-color: #FFF8ED;
+    cursor: none !important;
+}
+
+/* cursor */
+.cursor{
+    width: 50px;
+    height: 50px;
+    background: url(../images/menu_hover1.png) no-repeat center center;
+    background-size: cover;
+    user-select: none;
+    pointer-events: none;
+    position: fixed;
+    left: -40px;
+    top: -40px;
+    z-index: 999999;
+}
+/* container */
+.container{
+    margin: 0 auto;
+    width: 1440px;
+    height: inherit;
+    position: relative;
+}
+
+/* header */
+.header {
+    /* position: fixed; */
+    width: 1440px;
+    height: 150px;
+    /* top: 0; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    background-color: #FFF8ED;
+    transition: all 0.5s;
+    z-index: 98;
+}
+.header.on {
+    height: 100px;
+}
+.header.on .logo img {
+    margin-top: 7px;
+}
+.header.on .menu_bar {
+    margin-top: 35px;
+}
+.header.on .menu_bar2 img {
+    margin-top: 38px;
+}
+.logo img {
+    margin-top: 32px;
+    float: left;
+    width: 200px;
+    margin-bottom: 32px;
+    transition: all 0.5s;
+}
+.nav{
+    float: right;
+    overflow: hidden;
+    width: 25%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.menu_bar {
+    width: 80%;
+    float: left;
+    margin-top: 7vh;
+    transition: all 0.5s;
+}
+.menu_bar a{
+    float: left;
+}
+.menu_bar2 {
+    width: 20%;
+}
+
+.menu_bar span {
+    font-family: 'UhBeeSe_hyun';
+    font-size: 1vw;
+    line-height: 1vw;
+}
+.login{
+    width: 50%;
+}
+.menu {
+    width: 340px;
+    height: 100vh;
+    background-color: #FFF3E1;
+    position: fixed;
+    right: -340px;
+    top: 0;
+    /* display: none; */
+    border-radius: 50px 0 0 50px;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+.menu.on {
+    right: 0px;
+}
+.menu_btn img {
+    width: 1.5vw;
+    float: right;
+    margin-top: 7.5vh;
+    margin-right: 1vw;
+    transition: all 0.5s;
+}
+.menu_title {
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+    line-height: 10vh;
+    font-family: 'UhBeeSe_hyun';
+}
+.menu a i {
+    position: absolute;
+    bottom: 2.5vh;
+    left: 1.2vw;
+    font-size: 2vw;
+}
+.menu_list {
+    font-family: 'UhBeeSe_hyun';
+}
+.menu_list li {
+    text-align: center;
+    height: 8vh;
+    line-height: 8vh;
+    background-color: #f9bf98;
+    position: relative;
+}
+.menu_list li:hover {
+    background-color: #e7b08b;
+}
+.menu_list li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -40%;
+    width: 2.5vw;
+    height: 5vh;
+    background: url(../images/menu_hover1.png) no-repeat center center;
+    background-size: cover;
+    display: none;
+    /* transition: all 0.4s; */
+}
+.menu_list li::before {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 2.8vw;
+    height: 3.4vh;
+    background: url(../images/menu_hover2.png) no-repeat center center;
+    background-size: cover;
+    display: none;
+    /* transition: all 0.4s; */
+}
+.menu_list li:hover::after,
+.menu_list li:hover::before {
+    display: block;
+}
+.menu_list li a {
+    font-size: 0.9vw;
+    display: block;
+}
+
+
+/* main */
+
+main{
+    padding: 20px;
+    box-sizing: border-box;
+}
+main section{
+    width: 100%;
+}
+main section article{
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 12px;
+}
+main section::after{
+    content: "";
+    display: block;
+    clear: both;
+    /* clearfix대신. after 사용할 것.  */
+}
+main section article div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 191, 195);
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 14px;
+}
+main section article div img{
+    width: 100%;
+    border-radius: 5%;
+}
+main section article div img p{
+    color: #fff;
+    margin-bottom: 15px;
+}
+main ul{
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+main ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+main ul li{
+    float: right;
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+}
+main ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #e7b08b;
+    border: 2px solid #f9bf98;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+}
+main ul li.on{}
+main ul li.on a{
+    background-color: #FFF8ED;
+    border: 2px solid #e7b08b;
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+ /* footer */
+ .container1{
+    width: 1440px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+.footer{
+  height: 160px;
+}
+.footer .f_logo{
+  margin-right: 5rem;
+}
+.footer img{
+  height: 80px;
+  margin-top: 50px;
+}
+.footer div{
+  float: left;
+  color: #545454;
+  font-size: 0.75rem;
+}
+.footer .f_menu{
+  margin-top: 10px;
+  width: 80%;
+}
+.footer .f_menu a{
+  color: #545454;
+  display: inline-block;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  padding: 0 30px;
+}
+.footer .f_made{
+  width: 80%;
+}
+.footer .f_made p{
+  display: inline;
+  padding: 0 20px;
+}
+.footer .f_made p:first-child{
+  margin-left: 10px;
+}
+.footer .f_sns{
+  float: right;
+}
+.footer .f_copy{
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.footer .f_sns i{
+  font-size: 30px;
+  margin-right: 32px;
+  color: rgb(252, 128, 89);
+
+}
+.footer i:last-child{
+  margin-right: 0;
+}

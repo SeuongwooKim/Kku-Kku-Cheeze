@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+@media(max-width: 1450px) {
+    .container{width: 100%;}
+    .header{width: 100%;}
+    /* .nav{width: 100%;} */
+}
+
+@media(max-width:1024px){
+
+
+   /* h1{bottom: 18%; right: 2%; width: 200px; height: 80px;}
+    h1 a img{bottom: 2%; right: 10%;width: 160px;} */
+    .logo img {
+        margin-top: 38px;
+        float: left;
+        width: 170px;
+        transition: all 0.5s;
+    } 
+    .menu{width: 220px;}
+    .menu_list li::after {
+        width: 3vw;
+        top: -20%;
+        height: 3vh;
+    }
+    
+    .menu_list li::before {
+        width: 2.7vw;
+        height: 2.8vh;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2vw;
+    }
+
+    /* h2 .accordion_title */
+    .accordion_title{font-size: 24px;}
+    .slidepic .pic img{width: 100px; height: 100px;}
+    .panel-title{font-size: 14px;}
+    .panel-body p{line-height: 2.1; font-size: 13px;}
+
+    /* 푸터 */
+    .footer .f_sns{
+        float: left;
+        margin-left: 24%;
+        
+    }
+    .footer .f_logo{
+        margin-right: 1rem;
+    }
+}
+@media(max-width:768px) {
+    .logo img {
+        margin-top: 47px;
+        float: left;
+        width: 130px;
+        transition: all 0.5s;
+    }
+    .menu_bar {margin-top: 6.5vh;}
+    .menu{width: 160px;}
+    .menu_list li::after {
+        width: 4vw;
+        top: -20%;
+        left: 5%;
+        height: 3vh;
+    }
+    
+    .menu_list li::before {
+        width: 3vw;
+        height: 2vh;
+    }
+    .menu a i {
+        position: absolute;
+        bottom: 2.5vh;
+        left: 2vw;
+        font-size: 2.5vw;
+    }
+    .slidepic{display: none;}
+    .accordion_title{font-size: 20px;}
+    .panel-title{font-size: 12px;}
+    .panel-body p{line-height: 2.1; font-size: 11px;}
+      
+    /* 푸터 */
+      .footer .f_logo{
+        margin-right: 1rem;
+    }
+    .footer img{
+        height: 70px;
+        margin-top: 50px;
+    }
+    
+    .footer .f_menu a{
+        color: #545454;
+        display: inline-block;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+    .footer .f_made p{
+        display: inline;
+        padding: 0 10px;
+    }
+    .footer .f_made,
+    .footer .f_menu{
+        width: 70%;
+    }
+    .footer .f_sns{
+        float: left;
+        margin-left: 13%;
+    }
+    .footer i{
+        font-size: 25px;
+        margin-right: 15px;
+    }
+
+}
+
+@media(max-width:578px){
+    .footer .f_made,
+    .footer .f_menu{
+        width: 92%;
+    }
+}
+@media(max-width:480px) {
+    .logo img {
+            margin-top: 53px;
+            float: left;
+            width: 100px;
+            transition: all 0.5s;
+        }
+        .nav{width: 25%;}
+        .menu{width: 120px;}
+        .menu_btn img {
+            width: 2.8vw;
+        }
+        .menu_list li::after {
+            width: 5vw;
+            height: 2.5vh;
+        }
+        
+        .menu_list li::before {
+            width: 0;
+        }
+        .menu a i {
+            position: absolute;
+            bottom: 2.5vh;
+            left: 4vw;
+            font-size: 4vw;
+        }
+    
+        /* 푸터 */
+    .footer .f_logo{
+        margin-right: 0rem;
+    }
+    .footer img{
+        height: 60px;
+        margin-top: 50px;
+    }
+    
+    .footer .f_menu{
+        margin-top: 10px;
+        width: 80%;
+        display: none;
+    }
+    
+    .footer .f_made{
+        width: 50%;
+        display: none;
+    }
+    
+    
+    .footer .f_sns{
+        margin-top: 85px;
+        float: left;
+        margin-left: 15%;
+        
+    }
+    
+    .footer .f_copy{
+        margin-top: 20px;
+        padding-left: 30px;
+        display: none;
+    }
+    .footer i{
+        font-size: 20px;
+        margin-right: 15px;
+        color: rgb(252, 128, 89);
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+/*h1{bottom: 18%; right: 2%; width: 200px; height: 80px;}
+h1 a img{bottom: 2%; right: 10%;width: 160px;}
+
+
+.link{
+    bottom: 5%; right: 4%;}
+.link a{font-size: 1.3rem;}
+.link a .cat1{bottom: 56%; right: -6%;}
+.link a .cat2{bottom: 6%; right: -12%;}
+
+
+.text h2, .text h3{font-size: 1.8rem;} */

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찾아오시개</title>
+    <link rel="shortcut icon" href="images/menu_hover1.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <script src="./js/lightgallery-all.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="js/index.global.min.js"></script>
+    <link rel="stylesheet" href="./css/address_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/address_media.css">
+
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <header id="header">
+        <div class="container">
+            <div class="header clearfix">
+                <div class="logo">
+                    <a href="main_ksw.html">
+                        <img src="./images/logo.png" alt="꾸꾸치즈_로고이미지">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <div class="menu_bar">
+                        <a href="./login_lmk.html" class="login">
+                            <!-- <img src="./images/login.png" alt="로그인 이미지"> -->
+                            <span class="menu_login">로그인</span>
+                        </a>
+                        <a href="./sign_up_jsj.html" class="logout">
+                            <span>회원가입</span>
+                        </a>
+                    </div>
+                    <div class="menu_bar2">
+                        <a href="#" class="menu_btn">
+                            <img src="./images/menu_bar.png" alt="메뉴바">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="menu">
+            <span class="menu_title">KKU KKU CHEEZE</span>
+            <ul class="menu_list">
+                <li><a href="./about_jui.html">회사소개</a></li>
+                <li><a href="./gallery_jui.html">갤러리</a></li>
+                <li><a href="./address_api.html">찾아오시는길</a></li>
+                <li><a href="./faq_accordion_jee.html">자주묻는질문</a></li>
+            </ul>
+            <a href="#" class="close">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="map"  style="width: 80%; height:350px;"></div>
+    <div id="text">
+        <div class="container">
+            <div class="text">
+                <h1><i class="fa-solid fa-paw"></i>&nbsp;찾아오시는 길&nbsp;<i class="fa-solid fa-paw"></i></h1>
+                <div class="root">
+                    <p><i class="fa-solid fa-warehouse"></i> 서울 구로구 경인로 557 신한은행 4층</p>
+                    <p><i class="fa-solid fa-train-subway"></i> 지하철 : 구로역 3번출구 구로광장 왼쪽대각선 방향</p>
+                    <p><i class="fa-solid fa-bus"></i> 버스 : 구일역.구로공구상가 or 구로역.신도림동 하차 후 도보 10분</p>
+                    <p>구로역.구로기계공구상가 하차 후 도보 1분</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="f_logo">
+                    <img src="./images/logo.png" alt="푸터_로고">
+                </div>
+                <div class="f_menu">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">고객문의</a>
+                    <a href="#">이메일 문의</a>
+                </div>
+                <div class="f_made">
+                    <p href="#">제작</p>
+                    <p href="#">조성진</p>
+                    <p href="#">김성우</p>
+                    <p href="#">김채연</p>
+                    <p href="#">이민기</p>
+                    <p href="#">정주이</p>
+                    <p href="#">김지은</p>
+                </div>
+                <div class="f_copy">
+                    Copyright KKu KKu Cheeze. All Rights Reserved
+                </div>
+                <div class="f_sns">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8833cf86a2a6770278d2118941c196c2"></script>
+
+    <script>
+
+        //cursor
+        window.addEventListener("mousemove", (e) => {
+            var x = e.clientX - 25 + "px";
+            var y = e.clientY - 25 + "px";
+            document.querySelector(".cursor").style.left = x;
+            document.querySelector(".cursor").style.top = y;
+        });
+
+        // menu_bar
+        $(".menu_btn").click(function (e) {
+            e.preventDefault();
+            $(".menu").addClass("on");
+        });
+        $(".close").click(function (e) {
+            e.preventDefault();
+            $(".menu").removeClass("on");
+        });
+
+        $(".menu_title").click(function (e) {
+            e.preventDefault();
+            $("html").animate({ scrollTop: 0 }, 600);
+        });
+
+        $(window).scroll(function () {
+            let scrollTop = $(window).scrollTop();
+            // console.log(scrollTop);
+            if (scrollTop > 150) {
+                $(".header").addClass("on");
+            } else {
+                $(".header").removeClass("on");
+            }
+        });
+
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.5030698, 126.8789856), // 지도의 중심좌표
+                level: 4 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        var imageSrc = 'images/click.svg', // 마커이미지의 주소입니다    
+            imageSize = new kakao.maps.Size(54, 59), // 마커이미지의 크기입니다
+            imageOption = { offset: new kakao.maps.Point(32, 42) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(37.5030698, 126.8789856); // 마커가 표시될 위치입니다
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition,
+            image: markerImage // 마커이미지 설정 
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map); 
+    </script>
+</body>
+
+</html>

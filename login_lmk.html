@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="shortcut icon" href="images/menu_hover1.png">
+    <link rel="stylesheet" href="./css/login_lmk.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/media_login.css">
+    
+</head>
+<body>
+
+  <div class="cursor"></div>
+
+    <a href="main_ksw.html"class="logo" >
+      <img src="./images/login_logo.png" alt="">
+    </a>
+    <div class="container right-panel-active">
+    <!-- password -->
+    <div class="container__form container--password">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">나랑 같이 걸을래</h2>
+        <input type="email" placeholder="아이디" class="input" />
+        <input type="password" placeholder="패스워드" class="input" />
+        <a href="sign_up_jsj.html" class="link">회원가입하러 갈래 ?</a>
+        <a href="#" class="link2 click" >비밀번호를 잊었니 ?</a>
+        <button class="btn2">로그인</button>
+      </form>
+    </div>
+
+      <!-- Sign In -->
+  <div class="container__form container--signin">
+    <form action="#" class="form" id="form1">
+      <h2 class="form__title">비밀번호 찾기</h2>
+      <input type="text" placeholder="아이디" class="input" />
+      <input type="name" placeholder="이름" class="input" />
+      <input type="email" placeholder="Email" class="input" />
+      <button class="btn1">다음</button>
+    </form>
+  </div>
+
+  <!-- Overlay -->
+  <div class="container__overlay">
+    <div class="overlay">
+      
+      <div class="overlay__panel overlay--right">
+        <button class="btn1" id="password">로그인 할래?</button>
+      </div>
+      <div class="overlay__panel overlay--left">
+        <button class="btn2" id="signIn">비밀번호를 잃어버리셨습니까?</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer id="footer">
+  <div class="container2">
+      <div class="footer">
+          <div class="f_logo">
+              <img src="images/login_logo.png" alt="푸터_로고">
+          </div>
+          <div class="f_menu">
+              <a href="#">이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">고객문의</a>
+              <a href="#">이메일 문의</a>
+          </div>
+          <div class="f_made">
+              <p href="#">제작</p>
+              <p href="#">조성진</p>
+              <p href="#">김성우</p>
+              <p href="#">김채연</p>
+              <p href="#">이민기</p>
+              <p href="#">정주이</p>
+              <p href="#">김지은</p>
+          </div>
+          <div class="f_copy">
+              Copyright KKu KKu Cheeze. All Rights Reserved
+          </div>
+          <div class="f_sns">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!--팝업창-->
+<div id="layer">
+  <form action="#" class="form2" id="form2">
+    <h2 class="form__title">비밀번호 찾기</h2>
+    <input type="text" placeholder="아이디" class="input2" />
+    <input type="name" placeholder="이름" class="input2" />
+    <input type="email" placeholder="Email" class="input2" />
+    <button class="btn3">다음</button>
+  </form>
+  <a href="#" class="close">닫기</a>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./js/login.js"></script>
+
+<script>
+        //팝업창
+        $(".click").click(function(){
+            // $("#layer").show();
+            $("#layer").fadeIn(500);//서서이 보여주는 명령어(0.5초)
+            //1초에 1000을 단위로함
+        });
+        $(".close").click(function(){
+              // $("#layer").hide();
+            $("#layer").fadeOut(500);//서서이 감춰주는 명령어(0.5초)
+        });
+
+
+  // cursor
+  window.addEventListener("mousemove", (e) => {
+      var x = e.clientX - 25 + "px";
+      var y = e.clientY - 25 + "px";
+      document.querySelector(".cursor").style.left = x;
+      document.querySelector(".cursor").style.top = y;
+    });
+</script>
+
+
+
+
+</body>
+</html>
